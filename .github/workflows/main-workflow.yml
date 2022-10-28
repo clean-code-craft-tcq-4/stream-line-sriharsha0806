@@ -30,5 +30,13 @@ jobs:
         flake8 . --count --exit-zero --max-line-length=80 --ignore=E111,E121,E126 --statistics
     - name: Run and collect coverage
       run: | 
-        coverage run --branch Sender
+        coverage run --branch Sender/Sender.test.py
+        coverage html
+        coverage report
+    - name: Upload coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: ./htmlcov
+          retention-days: 21
         
