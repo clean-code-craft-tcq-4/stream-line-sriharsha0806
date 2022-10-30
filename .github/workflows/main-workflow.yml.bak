@@ -52,5 +52,4 @@ jobs:
       - name: Build and main class
         run: javac StreamReceiver.java
       - name: Run BMS Data Streamer
-        run: bms-app-receiver
-        python ..\Sender\Sender.py | mvn compile exec:java -Dexec.mainClass="com.tcq.training.bms.receiver.application.BMSReceiverApp"
+        run: python Sender.py send | java StreamReceiver

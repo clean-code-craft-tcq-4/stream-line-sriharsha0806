@@ -1,7 +1,6 @@
 package com.tcq.training.bms.receiver.loggerImpl;
 
 import java.io.IOException;
-import java.util.OptionalDouble;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;

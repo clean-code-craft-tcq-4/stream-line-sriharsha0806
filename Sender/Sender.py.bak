@@ -24,7 +24,7 @@ class Solution:
     def consolidate_sensor_data_on_console(self, number_of_samples):
         data_from_sensor = self.fetch_data(number_of_samples)
         for i in range(number_of_samples):
-            consolidated_data = self.format_data_in_JSON(i, '"SOC Sensor"', data_from_sensor[0][i], \
+            consolidated_data += self.format_data_in_JSON(i, '"SOC Sensor"', data_from_sensor[0][i], \
             '"Temperature Sensor"', data_from_sensor[1][i], \
            '"Battery Sensor"', data_from_sensor[2][i])
             self.print_data_on_console(consolidated_data)

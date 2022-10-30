@@ -35,7 +35,8 @@ public class DataUtil {
 	 * @return average
 	 */
 	public Double findAverage(List<Double> data, int delimiter) {
-		data = data.subList(data.size() - delimiter, data.size());
+		if (data.size() > delimiter)
+			data = data.subList(data.size() - delimiter, data.size());
 		OptionalDouble avg = data.stream().mapToDouble(it -> it).average();
 		if (avg.isPresent()) {
 			return avg.getAsDouble();

@@ -10,24 +10,24 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-"sampleNo",
-"soc",
-"temperature",
-"batterySensor"
+"Sample_no",
+"SOC Sensor",
+"Temperature Sensor",
+"Battery Sensor"
 })
 @JsonRootName(value = "BatteryParameters")
 public class BatteryParameters {
 
-	@JsonProperty("sampleNo")
+	@JsonProperty("Sample_no")
 	Double sampleNo;
 
-	@JsonProperty("soc")
+	@JsonProperty("SOC Sensor")
 	Double soc;
 
-	@JsonProperty("temperature")
+	@JsonProperty("Temperature Sensor")
 	Double temperature;
 
-	@JsonProperty("batterySensor")
+	@JsonProperty("Battery Sensor")
 	Double batterySensor;
 
 	/**
@@ -35,7 +35,7 @@ public class BatteryParameters {
 	 * 
 	 * @return soc
 	 */
-	@JsonProperty("soc")
+	@JsonProperty("SOC Sensor")
 	public Double getSoc() {
 		return soc;
 	}
@@ -45,7 +45,7 @@ public class BatteryParameters {
 	 * 
 	 * @param soc
 	 */
-	@JsonProperty("soc")
+	@JsonProperty("SOC Sensor")
 	public void setSoc(Double soc) {
 		this.soc = soc;
 	}
@@ -55,7 +55,7 @@ public class BatteryParameters {
 	 * 
 	 * @return temperature
 	 */
-	@JsonProperty("temperature")
+	@JsonProperty("Temperature Sensor")
 	public Double getTemperature() {
 		return temperature;
 	}
@@ -65,27 +65,27 @@ public class BatteryParameters {
 	 * 
 	 * @param temperature
 	 */
-	@JsonProperty("temperature")
+	@JsonProperty("Temperature Sensor")
 	public void setTemperature(Double temperature) {
 		this.temperature = temperature;
 	}
 
-	@JsonProperty("sampleNo")
+	@JsonProperty("Sample_no")
 	public Double getSampleNo() {
 		return sampleNo;
 	}
 
-	@JsonProperty("sampleNo")
+	@JsonProperty("Sample_no")
 	public void setSampleNo(Double sampleNo) {
 		this.sampleNo = sampleNo;
 	}
 
-	@JsonProperty("batterySensor")
+	@JsonProperty("Battery Sensor")
 	public Double getBatterySensor() {
 		return batterySensor;
 	}
 
-	@JsonProperty("batterySensor")
+	@JsonProperty("Battery Sensor")
 	public void setBatterySensor(Double batterySensor) {
 		this.batterySensor = batterySensor;
 	}

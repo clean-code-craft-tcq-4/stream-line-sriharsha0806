@@ -35,10 +35,10 @@ public class BMSDataReceiverContentTest {
 		for (int index = 1; index <= 50; index++) {
 			ObjectNode rootNode = mapper.createObjectNode();
 			ObjectNode childNode1 = mapper.createObjectNode();
-			childNode1.put("sampleNo", index);
-			childNode1.put("soc", 30 + index);
-			childNode1.put("temperature", 0 + index);
-			childNode1.put("batterySensor", "7");
+			childNode1.put("Sample_no", index);
+			childNode1.put("SOC Sensor", 30 + index);
+			childNode1.put("Temperature Sensor", 0 + index);
+			childNode1.put("Battery Sensor", "7");
 			rootNode.set("BatteryParameters", childNode1);
 			String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode);
 			batteryParameter = mapper.readValue(jsonString, BatteryParameters.class);
