@@ -49,4 +49,4 @@ jobs:
       
        
       - name: Run BMS Data Streamer
-        run: python Sender.py | mvn -f ./bms-app-receiver compile exec:java -Dexec.mainClass="com.tcq.training.bms.receiver.application.BMSReceiverApp"
+        run: python Sender/Sender.py | mvn -f ./bms-app-receiver compile exec:java -Dexec.mainClass="com.tcq.training.bms.receiver.application.BMSReceiverApp"
